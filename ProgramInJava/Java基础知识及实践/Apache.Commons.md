@@ -59,11 +59,12 @@ StrLookup从字面上看就是查找，StrLookup类有三个子类：
 -   返回值说明，=0，表明成功匹配字符数为0，即没有匹配成功；\>0，匹配成功N个字符数；
 
 **源码**
-  public abstract class StrMatcher {
+...java
+public abstract class StrMatcher {
     public abstract int isMatch(char[] buffer, int pos, int bufferStart, int bufferEnd);
     public int isMatch(final char[] buffer, final int pos) 
 }
-  
+...
 
 
 **测试样例**
