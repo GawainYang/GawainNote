@@ -10,7 +10,7 @@ JDBC是Java应用中用来连接关系型数据库的标准API。Sun公司一共
 应用与数据库间的timeout层级<br/>
 ![图片](.\images\Timeout Class.png)
 <br/>
-**说明**
+** 说明 **
 + 若没有合理地设置socket timeout，会有——连接被阻塞错误。
 + 高级别的timeout依赖于低级别的timeout，只有当低级别的timeout无误时，高级别的timeout才能确保正常。例如，当socket timeout出现问题时，高级别的statement timeout和transaction timeout都将失效。 （** 靠近底层的超时时间需要比上层的长，只有这样，上层的超时才能生效。 **）
 + timeout层级与DBCP是相互独立的。
